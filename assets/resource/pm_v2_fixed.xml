@@ -1,0 +1,9 @@
+<!--
+  PM01 固定基座版本
+  基于 pm_v2.xml 修改：将 freejoint 改为 weld，基座固定在空中
+  用法：把本文件放到 assets/resource/ 目录下，然后代码里加载这个文件
+-->
+<mujoco model="global_model_fixed">
+    <include file="robot/pm_v2/xml/serial_pm_v2_fixed_base.xml"/>
+    <include file="environment/ground.xml"/>
+</mujoco>
